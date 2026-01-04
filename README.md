@@ -68,35 +68,35 @@ Pagination for large datasets
 <!-- Project Structure -->
 
 home-furniture-ecommerce-api/
-│ecommerce_api
-├── config/                 
-│   ├── settings.py
-│   ├── urls.py
-│   └── wsgi.py
-│
-├── products/               
-├── users/                  
-├── manage.py
-├── requirements.txt
-└── README.md
+├── ecommerce_api
+ ├── config/                 
+ │   ├── settings.py
+ │   ├── urls.py
+ │   └── wsgi.py
+ │
+ ├── products/               
+ ├── users/                  
+ ├── manage.py
+ ├── requirements.txt
+ └── README.md
 
 
 <!-- API Endpoints (Sample) -->
 
 -Authentication
-Method	Endpoint	        Description
+Method	Endpoint	            Description
 
-POST	/api/auth/register/	Register a new user
-POST	/api/auth/login/	Login user
+POST	/api/users/register/	Register a new user
+POST	/api/users/login/	    Login user
 
 -Products
 Method	Endpoint	         Description
 
 GET	    /api/products/	     List all products
-POST	/api/products/	     Create a product (auth required)
+POST	/api/products/	     Create a product (users required)
 GET	    /api/products/{id}/	 Product detail
-PUT	    /api/products/{id}/	 Update product (auth required)
-DELETE	/api/products/{id}/	 Delete product (auth required)
+PUT	    /api/products/{id}/	 Update product (users required)
+DELETE	/api/products/{id}/	 Delete product (users required)
 
 
 <!-- Search & Filter -->
@@ -114,6 +114,26 @@ https://birukbarba.pythonanywhere.com/
 
 -API tested using Postman
 -All CRUD, authentication, search, and filtering endpoints tested successfully
+
+<!-- API Testing (Postman) Examples -->
+
+The following screenshots demonstrate successful API testing using Postman.
+
+- User Account register
+[User Register](screenshots/User_Creat_Acc.PNG)
+
+- User Authentication
+[User Login](screenshots/Users_login.PNG)
+
+- List Products
+[List Products](screenshots/Product_List.PNG)
+
+- Create Product (Authenticated)
+[Create Product](screenshots/Add_new_products.PNG)
+
+- List Category
+[List Category](screenshots/Category_list.PNG)
+
 
 <!-- Author -->
 
