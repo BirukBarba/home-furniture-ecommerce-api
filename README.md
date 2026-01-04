@@ -134,6 +134,13 @@ The following screenshots demonstrate successful API testing using Postman.
 - List Category
 [List Category](screenshots/Category_list.PNG)
 
+- Negative Price Validation
+[Negative Price](screenshots/Negative_Price_Validation.PNG)
+
+- Required field
+[Required Field](screenshots/Required_Field.PNG)
+
+
 
 <!-- Author -->
 
